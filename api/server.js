@@ -10,4 +10,8 @@ server.use(express.json());
 
 server.use('/api/cars', carsRouter);
 
+server.get('/', (req, res) => {
+    res.send('<h3>ITS WORKING</h3>');
+  });
+
 module.exports = server;
